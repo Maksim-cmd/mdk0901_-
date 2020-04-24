@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="l">
+        <li>Один</li>
+        <li>Два</li>
+        <li>Три</li>
+        <li>Четыре</li>
+      </ul>
+      <input type="text" id="t1">
+      <button onclick="b2()">Добавить li</button>  
+</body>
+<script>
+function b2(){
+    var txtVal = document.getElementById('t1').value,
+    listNode = document.getElementById('l'),
+    liNode = document.createElement("li"),
+    txtNode = document.createTextNode(txtVal);
+    liNode.appendChild(txtNode);
+    listNode.appendChild(liNode);
+    }
+    </script>
+</script>
+</html>
