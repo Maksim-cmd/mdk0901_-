@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+</head>
+<body>
+    <input type="button" id="bat" value="Цвет фона" onClick="b1()"/>
+</body>
+<script>
+function b1() {
+    var button = document.getElementById('bat');
+    var body = document.getElementsByTagName('body')[0];
+    var colors = ['blue', 'black', 'red', 'green','yellow'];
+    button.onclick = function() {
+        body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    };
+};
+</script>
+</html>
