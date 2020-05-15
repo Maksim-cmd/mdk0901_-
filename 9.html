@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Степанюк</title>
+</head>
+<body>
+<script>
+let calculateRoots = function (a, b, c) {
+let z = Math.sqrt(b * b - 4 * a * c),
+res= (z !== z) ? "Корней нет" : 
+    z== 0   ? 'Корень равен ' + -b / (2 * a) :
+    'Первый корень равен ' + (-b + z) / (2 * a) + 
+    ', второй корень равен ' + (-b - z) / (2 * a);
+return res;
+}
+</script>
+</body>
+</html>
