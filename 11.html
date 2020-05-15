@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Степанюк</title>
+</head>
+<body>
+    <!-- Задание 11 -->
+<script>
+let getProfitableDeposit = function (dep,srok,prost,kap) {
+      let norm = Math.floor(dep + (prost / 100 / 12) * srok * dep)
+      for (var i = 1, j = dep; i <= srok; i++) {
+        j += j * (kap / 100 / 12)
+      } 
+      let capital = Math.floor(j);
+      if (norm > capital) { return 'Выбирай обычный вклад. Заработаешь ' + norm }
+      if (norm < capital) { return 'Выбирай капитализацию. Заработаешь ' + capital }
+}
+</script>
+</body>
+</html>
