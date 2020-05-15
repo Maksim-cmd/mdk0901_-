@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Степанюк</title>
+</head>
+<body>
+    <!-- Задание 9 -->
+<script>
+let calculateDeposit = function (dep, proc,srok,kap) {
+  if (!kap){
+      dep += proc / 12 / 100 * srok * dep;
+  }
+  if (kap) {
+    for (let i = 1; i <= srok; i++) {
+      dep += proc / 12 / 100 * dep;
+    }
+  }
+return Math.floor(dep);
+};
+</script>
+</body>
+</html>
